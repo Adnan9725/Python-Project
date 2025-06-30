@@ -1,0 +1,30 @@
+import pandas as pd
+
+# Sample job listings data
+data = [
+    {
+        "Job Title": "Python Developer",
+        "Company": "ABC Tech",
+        "Location": "New Delhi",
+        "URL": "https://www.indeed.com/viewjob?jk=abc123"
+    },
+    {
+        "Job Title": "Junior Python Developer",
+        "Company": "XYZ Innovations",
+        "Location": "New Delhi",
+        "URL": "https://www.indeed.com/viewjob?jk=xyz456"
+    },
+    {
+        "Job Title": "Backend Engineer (Python)",
+        "Company": "CodeLabs",
+        "Location": "Remote",
+        "URL": "https://www.indeed.com/viewjob?jk=def789"
+    }
+]
+
+# Save to CSV
+df = pd.DataFrame(data)
+df.to_csv("sample_jobs.csv", index=False)
+
+print("CSV file 'sample_jobs.csv' has been created.")
+
